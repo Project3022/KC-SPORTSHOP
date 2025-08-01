@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos - KC SportShop</title>
+  <link rel="stylesheet" href="./style/Productos.css">
+</head>
+<body>
+  <header>
+    <h1>KC SPORTSHOP</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Ropa</a></li>
+        <li><a href="modelos.html">Modelos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="productos">
+    <h2>✨ Nuestros Productos ✨</h2>
+    <div class="grid-productos">
+
+<!-- Producto Principal -->
+<div class="producto" data-producto="top">
+  <img src="./imagen/superior/2.jpeg" alt="Top Deportivo " class="img-producto" />
+  <h3>Top Deportivo Lycra</h3>
+  <p>RD$ 850</p>
+  <button class="ver-colores" data-producto="top">Ver colores</button>
+</div>
+
+<div class="producto" data-producto="conjunto">
+  <img src="./imagen/01.jpeg" alt="conjunto" class="img-producto" />
+  <h3>Top Deportivo Lycra</h3>
+  <p>RD$ 850</p>
+  <button class="ver-colores" data-producto="conjunto">Ver colores</button>
+</div>
+
+<div class="producto" data-producto="inferior">
+  <img src="./imagen/inferior/1.jpeg" alt="inferior" class="img-producto" />
+  <h3>Top Deportivo Lycra</h3>
+  <p>RD$ 850</p>
+  <button class="ver-colores" data-producto="inferior">Ver colores</button>
+</div>
+
+    </div>
+  </section>
+
+  <!-- Modal de selección de colores -->
+<div id="modal-producto" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar-modal">&times;</span>
+    <h3 id="modal-titulo">Selecciona un color</h3>
+    <div class="colores" id="opciones-color">
+      <!-- Opciones se generan con JS -->
+    </div>
+  </div>
+</div>
+  <div id="lightbox" class="lightbox">
+  <span class="cerrar">&times;</span>
+  <img class="lightbox-img" src="" alt="imagen ampliada" />
+</div>
+ <footer class="footer-kc">
+  <div class="footer-content">
+   
+    <p class="footer-copy">© 2025 KC SportShop - Todos los derechos reservados</p>
+  </div>
+</footer>
+  <script src="./js/scrip.js"></script>
+
+</body>
+</html>
